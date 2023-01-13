@@ -3,9 +3,9 @@ import Header from "../Template/Header"
 
 
 const Home = () => {
-    return(
+    return (
         <>
-            <Header />          
+            <Header />
         </>
     )
 }
