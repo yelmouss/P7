@@ -1,11 +1,11 @@
 import React from 'react';
 
 const Card = ({ id, title, cover }) => {
-    return(
+    return (
         <li key={id} className='offre'>
             <a href={'/offre/' + id}>
                 <figure className='offre_figure'>
-                    <img src={cover} alt={title}  className='offre_figure_cover'/>
+                    <img src={cover} alt={title} className='offre_figure_cover' />
                     <figcaption className='offre_figure_figcaption'>
                         <h2 className='offre_figure_figcaption_title'>{title}</h2>
                     </figcaption>
