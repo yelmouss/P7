@@ -1,16 +1,16 @@
 import React from 'react';
 
 import AboutBanner from "../About/Banner"
-// import AboutContent from "../components/About/AboutContent"
+import AboutContent from "../About/content"
 import Header from "../Template/Header"
 import Footer from "../Template/Footer"
 
 const About = () => {
-    return(
+    return (
         <>
             <Header />
-           <AboutBanner />
-             {/* <AboutContent /> */}
+            <AboutBanner />
+            <AboutContent />
             <Footer />
         </>
     )
