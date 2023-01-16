@@ -593,7 +593,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center
+  align-items: center;
+ width : 100%
 }
 
 .footer_logo {
@@ -611,7 +612,7 @@ html {
   position: relative;
   min-height: 100%;
   margin: auto;
-  max-width: 1440px;
+  max-width: 100%;
   font-size: 18px;
   color: #ff5656;
   font-family: "Montserrat-Regular";
