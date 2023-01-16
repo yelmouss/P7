@@ -3,7 +3,7 @@ import React from 'react';
 import { NavLink, useParams } from 'react-router-dom';
 import offres from '../../datas/logements.json';
 import Collapse from '../Template/Collapse';
-import Gallery from '../Template/Gallery';
+// import Gallery from '../Template/Gallery';
 import RatingScale from './Rating';
 
 const offrePage = () => {
@@ -19,9 +19,9 @@ const offrePage = () => {
 
     return (
         <section key={offre.id} className='offre_page'>
-            <Gallery 
+            {/* <Gallery 
                 img={offre.pictures} 
-            />
+            /> */}
 
             <header className='offre_page_header'>
                 <article className='offre_page_header_infos'>
