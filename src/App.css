@@ -158,55 +158,55 @@
 }
 
 @media(max-width: 768px) {
-  .housings_container {
+  .offres_container {
       background-color: rgba(0, 0, 0, 0) !important;
       margin: 0 0 7rem 0 !important;
       padding: 0 !important;
       width: 100% !important
   }
 
-  .housings_list {
+  .offres_list {
       padding: 0rem !important
   }
 
-  .housing {
+  .offre {
       width: 100% !important
   }
 
-  .housing_figure {
+  .offre_figure {
       margin: 1rem .5rem !important
   }
 
-  .housing_figure_cover {
+  .offre_figure_cover {
       height: 400px !important
   }
 }
 
 @media(min-width: 768px)and (max-width: 1090px) {
-  .housing {
+  .offre {
       width: 50% !important
   }
 }
 
-.housings_container {
+.offres_container {
   width: 95%;
   margin: 2rem auto 9rem auto;
   background: #e9e9e9;
   border-radius: .8rem
 }
 
-.housings_list {
+.offres_list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 1rem
 }
 
-.housing {
+.offre {
   width: 33%
 }
 
-.housing_figure {
+.offre_figure {
   position: relative;
   display: flex;
   justify-content: center;
@@ -219,18 +219,18 @@
   transition: transform 250ms ease-in-out
 }
 
-.housing_figure:hover {
+.offre_figure:hover {
   transform: scale(1.03)
 }
 
-.housing_figure_cover {
+.offre_figure_cover {
   width: 100%;
   height: 290px;
   object-fit: cover;
   border-radius: .5rem
 }
 
-.housing_figure_figcaption {
+.offre_figure_figcaption {
   position: absolute;
   left: 0px;
   bottom: 0px;
@@ -242,7 +242,7 @@
   border-radius: 0 0 .5rem .5rem
 }
 
-.housing_figure_figcaption_title {
+.offre_figure_figcaption_title {
   color: #fff;
   font-size: 18px;
   width: 95%;
@@ -385,89 +385,89 @@
 }
 
 @media(max-width: 768px) {
-  .housing_page {
+  .offre_page {
       min-height: 40rem !important
   }
 
-  .housing_page_header {
+  .offre_page_header {
       flex-direction: column;
       margin-bottom: 0 !important
   }
 
-  .housing_page_header_infos_tags_tag {
+  .offre_page_header_infos_tags_tag {
       margin-bottom: 1rem !important
   }
 
-  .housing_page_header_hoster {
+  .offre_page_header_hoster {
       flex-direction: row-reverse !important;
       align-items: center !important;
       margin-top: 0 !important;
       margin-bottom: .5rem
   }
 
-  .housing_page_header_hoster_infos {
+  .offre_page_header_hoster_infos {
       align-items: center
   }
 
-  .housing_page_header_hoster_infos_name {
+  .offre_page_header_hoster_infos_name {
       margin-top: 0 !important;
       margin-bottom: 0 !important
   }
 
-  .housing_page_header_hoster_ratings {
+  .offre_page_header_hoster_ratings {
       padding: 0 .2rem 1rem 0 !important
   }
 
-  .housing_page_header_hoster_ratings_star {
+  .offre_page_header_hoster_ratings_star {
       padding: 0 .2rem 3rem 0 !important
   }
 
-  .housing_page_collapses {
+  .offre_page_collapses {
       flex-direction: column;
       justify-content: center;
       align-items: center
   }
 
-  .housing_page_collapses_content {
+  .offre_page_collapses_content {
       width: 100% !important;
       margin-bottom: 0 !important
   }
 }
 
-.housing_page {
+.offre_page {
   width: 95%;
   min-height: 35rem;
   margin: 1rem auto 7rem auto
 }
 
-.housing_page_header {
+.offre_page_header {
   display: flex;
   justify-content: space-between;
   margin: 1rem 0 1rem 0
 }
 
-.housing_page_header_infos {
+.offre_page_header_infos {
   display: flex;
   flex-direction: column;
   justify-content: space-between
 }
 
-.housing_page_header_infos_title {
+.offre_page_header_infos_title {
   font-size: 35px;
   margin: 0
 }
 
-.housing_page_header_infos_subtitle {
+.offre_page_header_infos_subtitle {
   font-size: 18px;
   margin: .2rem 0 1rem 0
 }
 
-.housing_page_header_infos_tags {
+.offre_page_header_infos_tags {
   display: flex;
   flex-wrap: wrap
 }
 
-.housing_page_header_infos_tags_tag {
+.offre_page_header_infos_tags_tag {
   font-size: 15px;
   color: #fff;
   background: #ff5656;
@@ -477,26 +477,26 @@
   border-radius: .5rem
 }
 
-.housing_page_header_hoster {
+.offre_page_header_hoster {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end
 }
 
-.housing_page_header_hoster_infos {
+.offre_page_header_hoster_infos {
   display: flex;
   align-items: center
 }
 
-.housing_page_header_hoster_infos_name {
+.offre_page_header_hoster_infos_name {
   width: 120px;
   text-align: right;
   margin-right: .5rem;
   font-size: 18px
 }
 
-.housing_page_header_hoster_infos_img {
+.offre_page_header_hoster_infos_img {
   width: 3.3rem;
   height: 3.3rem;
   border-radius: 3rem;
@@ -504,32 +504,32 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, .2)
 }
 
-.housing_page_header_hoster_ratings {
+.offre_page_header_hoster_ratings {
   margin-top: 1rem;
   text-align: right
 }
 
-.housing_page_header_hoster_ratings_star {
+.offre_page_header_hoster_ratings_star {
   padding-left: .3rem;
   font-size: 25px
 }
 
-.housing_page_header_hoster_ratings_star_grey {
+.offre_page_header_hoster_ratings_star_grey {
   color: #bcbaba
 }
 
-.housing_page_collapses {
+.offre_page_collapses {
   display: flex;
   justify-content: space-between;
   width: 100%
 }
 
-.housing_page_collapses_content {
+.offre_page_collapses_content {
   margin: 1rem 0;
   width: 47%
 }
 
-.housing_page_collapses_content ul {
+.offre_page_collapses_content ul {
   margin: 0
 }
 

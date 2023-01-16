@@ -1,12 +1,12 @@
 import React from 'react';
-import housings from '../../datas/logements.json'
+import offres from '../../datas/logements.json'
 import Card from './Card'
 
 const ShowCards = () => {
     return(
-        <section className='housings_container'>
-            <ul className='housings_list'>
-                {housings.map(({ id, title, cover }) => (
+        <section className='offres_container'>
+            <ul className='offres_list'>
+                {offres.map(({ id, title, cover }) => (
                     <Card
                         key={id}
                         id={id}
