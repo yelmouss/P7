@@ -4,7 +4,7 @@ import { NavLink, useParams } from 'react-router-dom';
 import offres from '../../datas/logements.json';
 import Collapse from '../Template/Collapse';
 import Gallery from '../Template/Gallery';
-import RatingScale from './Rating';
+import Rating from './Rating';
 
 const OffrePage = () => {
 
@@ -22,7 +22,6 @@ const OffrePage = () => {
             <Gallery 
                 img={offre.pictures} 
             />
-
             <header className='offre_page_header'>
                 <article className='offre_page_header_infos'>
                     <h1 className='offre_page_header_infos_title'>{offre.title}</h1>
@@ -39,7 +38,7 @@ const OffrePage = () => {
                         <p className='offre_page_header_hoster_infos_name'>{offre.host.name}</p>
                         <img src={offre.host.picture} alt='host-cover' className='offre_page_header_hoster_infos_img'/>
                     </div>
-                    <RatingScale
+                    <Rating
                         scaleValue={offre.rating}
                     />
                 </article>
