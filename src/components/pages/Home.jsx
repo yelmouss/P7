@@ -2,7 +2,7 @@ import React from 'react';
 import Header from "../Template/Header"
 import Footer from "../Template/Footer"
 import HomeBanner from "../Home/Banner"
-import ShowCards from "../Home/ShowCard"
+import ShowCards from "../Home/ShowCard"                                         
 
 
 const Home = () => {

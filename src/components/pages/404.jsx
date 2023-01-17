@@ -8,7 +8,7 @@ const ErrorNotFound = () => {
     return (
         <>
             <Header />
-           <p>404</p>
+          
             <Footer />
         </>
     )

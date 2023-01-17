@@ -17,8 +17,6 @@ const Routing = () => {
                 <Route exact path="/offre/:id" element={<Offre />} />
                 <Route exact path="/About" element={<About />} />     
                 <Route path="*" element={<ErrorNotFound />} />
-
-
             </Routes>
         </BrowserRouter>
     )
