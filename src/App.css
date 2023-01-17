@@ -38,15 +38,7 @@
 } */
 
 
-@font-face {
-  font-family: "Montserrat-Medium";
-  src: url("fonts/Montserrat-Medium.ttf")
-}
 
-@font-face {
-  font-family: "Montserrat-Regular";
-  src: url("fonts/Montserrat-Regular.ttf")
-}
 
 @font-face {
   font-family: "Montserrat-Medium";
@@ -57,6 +49,29 @@
   font-family: "Montserrat-Regular";
   src: url("fonts/Montserrat-Regular.ttf")
 }
+
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url("fonts/Montserrat-Medium.ttf")
+}
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("fonts/Montserrat-Regular.ttf")
+}
+
+
+html {
+  position: relative;
+  min-height: 100%;
+  margin: auto;
+  max-width: 100%;
+  font-size: 18px;
+  color: #ff5656;
+  font-family: "Montserrat-Regular";
+  background: #fff
+}
+
 
 @media(max-width: 768px) {
   .header {
@@ -606,17 +621,6 @@
   color: #fff;
   font-size: 15px;
   margin-bottom: 1.5rem
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-  margin: auto;
-  max-width: 100%;
-  font-size: 18px;
-  color: #ff5656;
-  font-family: "Montserrat-Regular";
-  background: #fff
 }
 
 h1,
