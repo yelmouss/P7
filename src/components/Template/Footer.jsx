@@ -1,7 +1,7 @@
 import React from 'react';
 import logoFooter from '../../img/logo-kasa-footer.png'
 
-const Footer = () => {
+function Footer() {
     return(
         <footer className='footer'>
             <img src={logoFooter} alt='logo-kasa' className='footer_logo' />

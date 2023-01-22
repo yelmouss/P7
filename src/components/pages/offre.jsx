@@ -3,8 +3,8 @@ import Header from "../Template/Header";
 import OffrePage from "../offre/OffrePage";
 import Footer from "../Template/Footer"
 
-const Offre = () => {
-    return(
+function Offre() {
+    return (
         <>
             <Header />
             <OffrePage />

@@ -8,7 +8,7 @@ import Error404 from "../notFound/content"
 
 
 
-const ErrorNotFound = () => {
+function ErrorNotFound() {
     return (
         <>
             <Header />

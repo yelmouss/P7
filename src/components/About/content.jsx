@@ -1,8 +1,8 @@
 import React from 'react';
 import Collapse from "../Template/Collapse";
 
-const AboutContent = () => {
-    return(
+function AboutContent() {
+    return (
         <section className="about_collapses">
             <div className="about_collapses_content">
                 <Collapse

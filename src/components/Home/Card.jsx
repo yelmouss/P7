@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Card = ({ id, title, cover }) => {
+function Card({ id, title, cover }) {
     return (
         <li key={id} className='offre'>
             <a href={'/offre/' + id}>

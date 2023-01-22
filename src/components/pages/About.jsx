@@ -5,7 +5,7 @@ import AboutContent from "../About/content"
 import Header from "../Template/Header"
 import Footer from "../Template/Footer"
 
-const About = () => {
+function About() {
     return (
         <>
             <Header />

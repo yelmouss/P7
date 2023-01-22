@@ -1,19 +1,19 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import React from 'react';
-import {useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import offres from '../../datas/logements.json';
 import Collapse from '../Template/Collapse';
 import SLider from '../Template/SLider';
 import Rating from './Rating';
 import Error404 from "../notFound/content"
 
-const OffrePage = () => {
+function OffrePage() {
 
     const { id } = useParams()
     const offre = offres.find(offre => offre.id === id)
     if (offre === undefined) {
-        return <>           
-            <Error404 />           
+        return <>
+            <Error404 />
         </>
     }
 

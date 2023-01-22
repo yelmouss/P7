@@ -5,7 +5,7 @@ import { faStar } from '@fortawesome/free-solid-svg-icons';
 const star = <FontAwesomeIcon icon={faStar} />
 const starGrey = <FontAwesomeIcon icon={faStar} />
 
-const RatingScale = (props) => {
+function RatingScale (props) {
     const scaleValue = props.scaleValue
 
     const range = [1, 2, 3, 4, 5]

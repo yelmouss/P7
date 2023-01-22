@@ -6,11 +6,11 @@ import { faAngleDown, faAngleUp } from '@fortawesome/free-solid-svg-icons';
 const angleDown = <FontAwesomeIcon icon={faAngleDown} />
 const angleUp = <FontAwesomeIcon icon={faAngleUp} />
 
-const Collapse = (props) => {
-    const [ openTab, setOpenTab ] = useState(false);
+function Collapse(props) {
+    const [openTab, setOpenTab] = useState(false);
 
     const openTabHandler = () => {
-        setOpenTab((openTab) => !openTab); 
+        setOpenTab((openTab) => !openTab);
     };
 
     return (
@@ -19,7 +19,7 @@ const Collapse = (props) => {
                 <h2 className="collapse_header_title">{props.title}</h2>
                 {!openTab ? <i className="collapse_header_icon">{angleDown}</i> : <i className="collapse_header_icon">{angleUp}</i>}
             </div>
-            {openTab && 
+            {openTab &&
                 <div className="collapse_content">{props.content}</div>
             }
         </>
