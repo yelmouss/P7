@@ -5,7 +5,7 @@ import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 const angleLeft = <FontAwesomeIcon icon={faAngleLeft} />
 const angleRight = <FontAwesomeIcon icon={faAngleRight} />
 
-const Gallery = (props) => {
+const SLider = (props) => {
     const [slideIdx, setSlideIdx] = useState(0);
     const imgSize = () => {
         const slideshowImg = document.querySelector('.slideshow_container img');
@@ -14,7 +14,6 @@ const Gallery = (props) => {
         }
         return slideshowImg.width;
     }
-
     const onNext = () => {
         if(slideIdx === props.img.length - 1){
             setSlideIdx(0)
@@ -22,7 +21,6 @@ const Gallery = (props) => {
             setSlideIdx(slideIdx + 1)
         }
     }
-    
     const onPrev = () => {
         if(slideIdx === 0){
             setSlideIdx(props.img.length - 1)
@@ -48,4 +46,4 @@ const Gallery = (props) => {
     )
 }
 
-export default Gallery;
+export default SLider;

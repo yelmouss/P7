@@ -3,7 +3,7 @@ import React from 'react';
 import {useParams } from 'react-router-dom';
 import offres from '../../datas/logements.json';
 import Collapse from '../Template/Collapse';
-import Gallery from '../Template/Gallery';
+import SLider from '../Template/SLider';
 import Rating from './Rating';
 import Error404 from "../notFound/content"
 
@@ -19,7 +19,7 @@ const OffrePage = () => {
 
     return (
         <section key={offre.id} className='offre_page'>
-            <Gallery
+            <SLider
                 img={offre.pictures}
             />
             <header className='offre_page_header'>
