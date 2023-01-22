@@ -1,26 +1,26 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import React from 'react';
-import { NavLink, useParams } from 'react-router-dom';
+import {useParams } from 'react-router-dom';
 import offres from '../../datas/logements.json';
 import Collapse from '../Template/Collapse';
 import Gallery from '../Template/Gallery';
 import Rating from './Rating';
+import Error404 from "../notFound/content"
 
 const OffrePage = () => {
 
     const { id } = useParams()
     const offre = offres.find(offre => offre.id === id)
-    if (offre === undefined) { 
-        return <section className="error_page">
-            <p className="error_page_subtitle">Malheureusement, le logement que vous recherchez n'est plus disponible ou n'existe pas.</p>
-            <NavLink title='Accueil' end to='/home' className="error_page_link">Retourner sur la page d'accueil</NavLink> 
-        </section>
+    if (offre === undefined) {
+        return <>           
+            <Error404 />           
+        </>
     }
 
     return (
         <section key={offre.id} className='offre_page'>
-            <Gallery 
-                img={offre.pictures} 
+            <Gallery
+                img={offre.pictures}
             />
             <header className='offre_page_header'>
                 <article className='offre_page_header_infos'>
@@ -32,11 +32,11 @@ const OffrePage = () => {
                         ))}
                     </div>
                 </article>
-            
+
                 <article className='offre_page_header_hoster'>
                     <div className='offre_page_header_hoster_infos'>
                         <p className='offre_page_header_hoster_infos_name'>{offre.host.name}</p>
-                        <img src={offre.host.picture} alt='host-cover' className='offre_page_header_hoster_infos_img'/>
+                        <img src={offre.host.picture} alt='host-cover' className='offre_page_header_hoster_infos_img' />
                     </div>
                     <Rating
                         scaleValue={offre.rating}
