@@ -121,7 +121,6 @@ html {
 .header_nav_link_active {
   font-family: "Montserrat-Medium";
   text-decoration-line: underline;
-
   border-radius: .3rem;
   padding: .2rem .7rem
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-
 import AboutBanner from "../About/Banner"
 import AboutContent from "../About/content"
 import Header from "../Template/Header"
