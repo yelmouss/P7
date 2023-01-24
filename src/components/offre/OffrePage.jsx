@@ -13,6 +13,7 @@ function OffrePage() {
     const offre = offres.find(offre => offre.id === id)
     if (offre === undefined) {
         return <>
+
             <Error404 />
         </>
     }
@@ -67,3 +68,5 @@ function OffrePage() {
 }
 
 export default OffrePage;
+
+// https://www.youtube.com/watch?v=jUzjqnFhPMY&t=2986s

@@ -120,7 +120,8 @@ html {
 
 .header_nav_link_active {
   font-family: "Montserrat-Medium";
-  background: rgba(255, 163, 163, .2);
+  text-decoration-line: underline;
+
   border-radius: .3rem;
   padding: .2rem .7rem
 }
